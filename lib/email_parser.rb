@@ -8,8 +8,8 @@ def initialize(email_addresses)
   @emails << email_addresses
 end
 
-def self.parse
-    converted = self.new.(/[," "]/, "*")
+def parse
+    converted = @emails.(/[," "]/, "*")
     string = converted.split("*")
     binding.pry
     cleaned = string.reject{|element| element.empty?}
