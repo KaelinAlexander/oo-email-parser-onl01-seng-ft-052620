@@ -4,8 +4,8 @@ class EmailAddressParser
 attr_accessor :email_list
 email_list = []
 
-def parser(csv)
-    converted = csv.gsub(/[," "]/, "*")
+def initalize
+    converted = Self.gsub(/[," "]/, "*")
     string = converted.split("*")
     binding.pry
     cleaned = string.reject{|element| element.empty?}
