@@ -9,7 +9,7 @@ def initialize
 end
 
 def self.parse
-    converted = @email_list.gsub(/[," "]/, "*")
+    converted = self.(/[," "]/, "*")
     string = converted.split("*")
     binding.pry
     cleaned = string.reject{|element| element.empty?}
