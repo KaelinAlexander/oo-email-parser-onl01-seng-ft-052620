@@ -8,7 +8,7 @@ def initialize(email_addresses)
 end
 
 def parse
-    converted = @emails.(/[," "]/, "*")
+    converted = @emails.(/[, ]/, "*")
     string = converted.split("*")
     cleaned = string.reject{|element| element.empty?}
     counted = cleaned.count
