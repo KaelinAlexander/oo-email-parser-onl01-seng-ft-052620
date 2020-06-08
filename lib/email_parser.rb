@@ -4,7 +4,7 @@ class EmailAddressParser
 attr_accessor :email_list
 email_list = []
 
-def parse self
+def self.parse
     converted = self.gsub(/[," "]/, "*")
     string = converted.split("*")
     binding.pry
