@@ -11,8 +11,8 @@ def parse
     converted = @emails.gsub(/[, ]/, "*")
     string = converted.split("*")
     cleaned = string.reject{|element| element.empty?}
+    dedupe = cleaned.uniq
     binding.pry
-    cleaned
 end
 
 end
