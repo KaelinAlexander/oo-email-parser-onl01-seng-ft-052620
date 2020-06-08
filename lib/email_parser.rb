@@ -9,10 +9,9 @@ end
 
 def parse
     converted = @emails.gsub(/[, ]/, "*")
-    binding.pry
     string = converted.split("*")
+    binding.pry
     cleaned = string.reject{|element| element.empty?}
-    counted = cleaned.count
     counted
 end
 
