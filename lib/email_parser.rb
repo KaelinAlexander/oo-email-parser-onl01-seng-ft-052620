@@ -5,7 +5,7 @@ attr_accessor :emails
 
 def initialize(email_addresses)
   @emails = self
-      binding.pry
+  binding.pry
 end
 
 def parse
