@@ -12,7 +12,6 @@ def parse
     string = converted.split("*")
     cleaned = string.reject{|element| element.empty?}
     dedupe = cleaned.uniq
-    binding.pry
 end
 
 end
