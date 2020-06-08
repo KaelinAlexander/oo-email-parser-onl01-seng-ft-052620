@@ -12,7 +12,7 @@ def parse
     string = converted.split("*")
     binding.pry
     cleaned = string.reject{|element| element.empty?}
-    counted
+    cleaned
 end
 
 end
