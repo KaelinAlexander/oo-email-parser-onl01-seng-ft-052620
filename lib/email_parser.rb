@@ -1,11 +1,12 @@
 require "pry"
 
 class EmailAddressParser
-attr_accessor :email_list
-email_list = []
+attr_accessor :emails
+emails = []
 
 def initialize(email_addresses)
-  @emails = 
+  @emails << email_addresses
+end
 
 def self.parse
     converted = self.new.(/[," "]/, "*")
