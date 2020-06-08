@@ -2,6 +2,7 @@ require "pry"
 
 class EmailAddressParser
 attr_accessor :emails
+@emails = []
 
 def initialize(email_addresses)
   @emails << self
