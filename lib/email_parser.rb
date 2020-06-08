@@ -5,7 +5,7 @@ attr_accessor :emails
 @emails = []
 
 def initialize(email_addresses)
-  @emails << self
+  @emails = self
 end
 
 def parse
