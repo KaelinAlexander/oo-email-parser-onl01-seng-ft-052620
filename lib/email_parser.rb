@@ -4,10 +4,6 @@ class EmailAddressParser
 attr_accessor :email_list
 email_list = []
 
-def initialize
-  @email_list << self.new
-end
-
 def self.parse
     converted = self.(/[," "]/, "*")
     string = converted.split("*")
