@@ -5,7 +5,7 @@ attr_accessor :email_list
 email_list = []
 
 def initialize(email_addresses)
-  self.new = 
+  @emails = 
 
 def self.parse
     converted = self.new.(/[," "]/, "*")
