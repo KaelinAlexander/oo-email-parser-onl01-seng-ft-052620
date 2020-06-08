@@ -1,7 +1,7 @@
 require "pry"
 
 class EmailAddressParser
-attr_accessor: email_list
+attr_accessor :email_list
 email_list = []
 
 def parser(list)
